@@ -119,7 +119,7 @@
       "allowedValues": [
         "Standard_D1",
         "Standard_DS1",
-        "Standard_D2",
+        "Standard_A2",
         "Standard_DS2",
         "Standard_D3",
         "Standard_DS3",
