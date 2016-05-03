@@ -20,7 +20,7 @@
       "metadata": {
         "description": "Type of new Storage Accounts (Standard_LRS, Standard_GRS, Standard_RAGRS or Premium_LRS) to be created to store VM disks"
       },
-      "defaultValue": "Premium_LRS"
+      "defaultValue": "Standard_LRS"
     },
 
     "vmNamePrefix": {
@@ -35,7 +35,7 @@
       "allowedValues": [
         "Standard_D1",
         "Standard_DS1",
-        "Standard_D2",
+        "Standard_A2",
         "Standard_DS2",
         "Standard_D3",
         "Standard_DS3",
@@ -53,7 +53,7 @@
       "metadata": {
         "description": "Size of the AD VMs to be created"
       },
-      "defaultValue": "Standard_DS1"
+      "defaultValue": "Standard_A2"
     },
 
     "sqlVMSize": {
@@ -61,7 +61,7 @@
       "allowedValues": [
         "Standard_D1",
         "Standard_DS1",
-        "Standard_D2",
+        "Standard_A2",
         "Standard_DS2",
         "Standard_D3",
         "Standard_DS3",
@@ -79,7 +79,7 @@
       "metadata": {
         "description": "Size of the SQL VMs to be created"
       },
-      "defaultValue": "Standard_DS3"
+      "defaultValue": "Standard_A2"
     },
 
     "sqlWitnessVMSize": {
@@ -87,7 +87,7 @@
       "allowedValues": [
         "Standard_D1",
         "Standard_DS1",
-        "Standard_D2",
+        "Standard_A2",
         "Standard_DS2",
         "Standard_D3",
         "Standard_DS3",
@@ -105,7 +105,7 @@
       "metadata": {
         "description": "Size of the Witness VM to be created"
       },
-      "defaultValue": "Standard_DS1"
+      "defaultValue": "Standard_A2"
     },
 
     "dnsPrefix": {
