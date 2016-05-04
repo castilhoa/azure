@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "adminUsername": {
-            "value": "admin123"
+            "value": "UBA_Admin"
         },
         "adminPassword": {
             "value" : "GEN-PASSWORD"
@@ -24,7 +24,7 @@
             "value" : "GEN-PASSWORD"
         },
         "sharePointFarmAccountPassword":{
-            "value": "Admin123sp!farm"
+            "value": "Ubatuba.1"
         },
         "sharePointFarmPassphrasePassword":{
             "value": "GEN-PASSWORD"
@@ -45,19 +45,19 @@
             "value": "GEN-UNIQUE"
         },
         "storageAccountType": {
-            "value" : "Premium_LRS"
+            "value" : "Standard_LRS"
         },
         "adVMSize" : {
-            "value" : "Standard_DS1"
+            "value" : "Standard_A1"
         },
         "sqlVMSize" : {
-            "value" : "Standard_DS3"
+            "value" : "Standard_A2"
         },
         "witnessVMSize" : {
-            "value" : "Standard_DS1"
+            "value" : "Standard_A1"
         },
         "spVMSize" : {
-            "value" : "Standard_DS3"
+            "value" : "Standard_A2"
         },
         "domainName":{
             "value":"contoso.local"
