@@ -26,28 +26,28 @@
          "metadata":{
             "description":"The size of the AD VMs Created"
          },
-         "defaultValue":"Standard_DS1"
+         "defaultValue":"Standard_A1"
       },
       "sqlVMSize":{
          "type":"string",
          "metadata":{
             "description":"The size of the SQL VMs Created"
          },
-         "defaultValue":"Standard_DS3"
+         "defaultValue":"Standard_A2"
       },
       "witnessVMSize":{
          "type":"string",
          "metadata":{
             "description":"The size of the Witness VM Created"
          },
-         "defaultValue":"Standard_DS1"
+         "defaultValue":"Standard_A1"
       },
       "spVMSize":{
          "type":"string",
          "metadata":{
             "description":"The size of the SP VMs Created"
          },
-         "defaultValue":"Standard_DS2"
+         "defaultValue":"Standard_A2"
       },
       "domainName":{
          "type":"string",
@@ -119,7 +119,7 @@
          "metadata":{
             "description":"The type of the Storage Account created"
          },
-         "defaultValue":"Premium_LRS"
+         "defaultValue":"Standard_LRS"
       },
       "virtualNetworkAddressRange":{
          "type":"string",
@@ -220,7 +220,7 @@
             "description":"Base URL for Marketplace",
             "artifactsBaseUrl":""
          },
-         "defaultValue":"https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/sharepoint-server-farm-ha"
+         "defaultValue":"https://raw.githubusercontent.com/castilhoa/azure/master/sharepoint-server-farm-ha"
       }
    },
   "variables": {
@@ -277,7 +277,7 @@
       "windowsImageOffer": "WindowsServer",
       "windowsImageSKU": "2012-R2-Datacenter",
       "sqlImagePublisher": "MicrosoftSQLServer",
-      "sqlImageOffer": "SQL2014-WS2012R2",
+      "sqlImageOffer": "SQL2012-WS2012R2",
       "sqlImageSKU": "Enterprise",
       "spImagePublisher": "MicrosoftSharePoint",
       "spImageOffer": "MicrosoftSharePointServer",
@@ -400,7 +400,7 @@
       "setupLBsUrl": "[concat(parameters('baseUrl'),'/setupLBs.json')]",
       "creatingNicsUrl": "[concat(parameters('baseUrl'),'/creatingNICS.json')]"
     },
-    "assetLocation": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/sharepoint-server-farm-ha/dscv2"
+    "assetLocation": "https://raw.githubusercontent.com/castilhoa/azurev/master/sharepoint-server-farm-ha/dscv2"
   },
    "resources":[
       {
