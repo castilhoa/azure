@@ -17,10 +17,10 @@
       "adVMSize":{  
          "type":"string",
          "allowedValues":[  
-            "Standard_D1", 
+            "Standard_A1", 
             "Standard_D1_v2",
             "Standard_DS1",
-            "Standard_D2",
+            "Standard_A2",
             "Standard_D2_v2",
             "Standard_DS2",
             "Standard_D3",
@@ -45,13 +45,13 @@
          "metadata":{  
             "description":"The size of the AD VMs Created"
          },
-         "defaultValue":"Standard_D1"
+         "defaultValue":"Standard_A1"
       },
       "sqlVMSize":{  
          "type":"string",
          "allowedValues":[  
             "Standard_DS1",
-            "Standard_DS2",
+            "Standard_A2",
             "Standard_DS3",
             "Standard_DS4",
             "Standard_DS11",
@@ -62,12 +62,12 @@
          "metadata":{  
             "description":"The size of the SQL VMs Created"
          },
-         "defaultValue":"Standard_DS4"
+         "defaultValue":"Standard_A2"
       },
       "witnessVMSize":{  
          "type":"string",
          "allowedValues":[  
-            "Standard_DS1",
+            "Standard_A1",
             "Standard_DS2",
             "Standard_DS3",
             "Standard_DS4",
@@ -79,7 +79,7 @@
          "metadata":{  
             "description":"The size of the Witness VM Created"
          },
-         "defaultValue":"Standard_DS1"
+         "defaultValue":"Standard_A1"
       },
       "domainName":{  
          "type":"string",
@@ -110,12 +110,12 @@
       "sqlStorageAccountType":{  
          "type":"string",
          "allowedValues":[  
-            "Premium_LRS"
+            "Standard_LRS"
          ],
          "metadata":{  
             "description":"The type of the Sql Server Storage Account created"
          },
-         "defaultValue":"Premium_LRS"
+         "defaultValue":"Standard_LRS"
       },
       "dcStorageAccountName":{  
          "type":"string",
@@ -183,28 +183,28 @@
          "metadata":{  
             "description":"The DNS Prefix for the Public IP Address for the Always On Cluster"
          },
-         "defaultValue":"aodns"
+         "defaultValue":"upmtest"
       },
       "virtualNetworkName":{  
          "type":"string",
          "metadata":{  
             "description":"Name of virtual network to be created"
          },
-         "defaultValue":"autohav2VNET"
+         "defaultValue":"upmtestVNET"
       },
       "templatesBaseUrl":{  
          "type":"string",
          "metadata":{  
             "description":"Linked Templates base url"
          },
-         "defaultValue":"https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/sqlvm-alwayson-cluster/nested"
+         "defaultValue":"https://raw.githubusercontent.com/castilhoa/azure/master/sqlvm-alwayson-cluster/nested"
       },
       "scriptsBaseUrl":{  
          "type":"string",
          "metadata":{  
             "description":"DSC Scripts base url"
          },
-         "defaultValue":"https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/sqlvm-alwayson-cluster/scripts"
+         "defaultValue":"https://raw.githubusercontent.com/castilhoa/azure/master/sqlvm-alwayson-cluster/scripts"
       },
       "autoPatchingDay":{  
          "type":"string",
@@ -262,7 +262,7 @@
          "metadata":{  
             "description":"The Sql AlwaysOn Group Name"
          },
-         "defaultValue":"alwayson-ag"
+         "defaultValue":"upmtest-aoag"
       },
       "sqlAOListenerPort":{  
          "type":"string",
@@ -276,7 +276,7 @@
          "metadata":{  
             "description":"The Sql AG Listener Name"
          },
-         "defaultValue":"alwayson-ag-listener"
+         "defaultValue":"upmtest-aoag-listener"
       },
       "sqlServerVersion":{  
          "type":"string",
@@ -287,7 +287,7 @@
          "metadata":{  
             "description":"The Sql Server Version"
          },
-         "defaultValue":"SQL2014SP1-WS2012R2"
+         "defaultValue":"SQL2012SP2-WS2012R2"
       },
       "numberOfSqlVMDisks":{  
          "type":"string",
